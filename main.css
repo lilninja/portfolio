@@ -96,7 +96,6 @@ body {
   flex: 1;
   margin-top: 30px;
   margin-right: 30px;
-  background-color: pink;
   list-style: none;
   transition: transform .25s;
   overflow: hidden;
