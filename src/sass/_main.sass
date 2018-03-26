@@ -1,0 +1,211 @@
+.header
+	max-width: 1170px
+	margin: 0 auto
+	height: 50px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 33px
+	@media (max-width: 600px)
+		padding: 0 25px
+.main
+	max-width: 1170px
+	margin: 0 auto
+	padding: 0 25px
+	display: flex
+	flex-flow: column nowrap
+	@media (max-width: 1200px)
+		align-items: center
+.heading
+	padding-top: 250px
+	@media (max-width: 1200px)
+		padding-top: 150px
+		text-align: center
+	@media (max-width: 800px)
+		padding-top: 20vw
+	&__title
+		margin: 0
+		font-size: 80px
+		line-height: 1
+		font-family: Playfair Display
+		font-weight: bold
+		@media (max-width: 800px)
+			font-size: 12vw
+	&__subtitle
+		font-family: Consolas, monospace
+		font-size: 20px
+		// opacity: 0.5
+		color: #ffa131
+		margin-top: 20px
+		margin-left: 8px
+		@media (max-width: 800px)
+			font-size: 4vw
+	
+.about
+	max-width: 400px
+	margin-top: 50px
+	display: inline-block
+	margin-left: auto
+	@media (max-width: 1200px)
+		margin-left: 0
+		margin-top: 100px
+		text-align: center
+	@media (max-width: 800px)
+		margin-top: 20vw
+	&__title
+		display: inline-block
+		border-bottom: 2px solid #ffa131
+		font-size: 60px
+		line-height: 1.2
+		font-family: Playfair Display
+		font-weight: bold
+		@media (max-width: 800px)
+			font-size: 10vw
+	&__txt
+		margin-top: 30px
+		line-height: 1.7
+		text-align: left
+
+.works
+	margin-top: 150px
+	text-align: center
+	@media (max-width: 800px)
+		width: 100%
+		margin-top: 20vw
+	&__title
+		font-size: 60px
+		margin-bottom: 70px
+		display: inline-block
+		border-bottom: 2px solid #ffa131
+		line-height: 1.2
+		font-family: Playfair Display
+		font-weight: bold
+		text-align: center
+		@media (max-width: 800px)
+			font-size: 10vw
+			margin-bottom: 10vw
+	&__list
+		display: flex
+		flex-flow: column nowrap
+		align-items: center
+		@media (max-width: 800px)
+			width: 100%
+	&__item
+		position: relative
+		text-align: left
+		display: inline-block
+		width: 700px
+		height: 350px
+		margin-bottom: 50px
+		background-color: #eee
+		@media (max-width: 800px)
+			width: 100%
+.work
+	background-size: cover
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	&--dormis
+		background-image: url("../img/dormis.jpg")
+	&--bai
+		background-image: url("../img/bai2.jpg")
+	&--nsp
+		background-image: url("../img/nsp.jpg")
+	&--codepen
+		background-image: url("../img/codepen.jpg")
+	&:hover
+		.work__info
+			opacity: 1
+			pointer-events: auto
+			transform: translateX(0)
+	&__info
+		position: absolute
+		opacity: 0
+		pointer-events: none
+		padding: 50px
+		left: -150px
+		top: 7%
+		transition: all .25s ease-in-out
+		z-index: 10
+		background-color: rgba(255,255,255,1)
+		transform: translateX(-50px)
+		@media (max-width: 1200px)
+			transform: translateX(0px)
+			opacity: 1
+			pointer-events: auto
+			left: 0
+		@media (max-width: 800px)
+			padding: 20px
+	&__img
+		height: 100%
+		width: auto
+	&__title
+		font-size: 60px
+		font-family: Playfair Display
+		line-height: 1.2
+		font-weight: 600
+		margin-left: -5px
+		@media (max-width: 800px)
+			font-size: 8vw
+			margin-left: 0
+	&__role
+		margin-top: 5px
+		font-family: Consolas, monospace
+		display: inline-block;
+		// background-color: #EEF9FE
+		background-color: #ffa1316b
+		padding: 0 5px
+	&__sum
+		margin-top: 20px
+	&__link
+		margin-top: 20px
+		height: 30px
+		line-height: 30px
+		border: 1px solid #000
+		padding: 0 15px
+		display: inline-block
+		text-transform: uppercase
+		font-size: 11px
+		letter-spacing: 1px
+		font-weight: 600
+		&:hover
+			background-color: #313F4B
+			color: #fff
+	// &__backdrop
+	// 	position: absolute
+	// 	top: 0
+	// 	left: 0
+	// 	right: 0
+	// 	bottom: 0
+	// 	background-color: #fff
+	// 	opacity: 0
+	// 	transition: all .25s ease-in-out
+	// 	@media (max-width: 800px)
+	// 		opacity: 0.8
+			
+.contacts
+	&__list
+		display: flex
+		align-items: center
+	&__item
+		display: inline-block
+		margin-left: 20px
+		@media (max-width: 600px)
+			margin-left: 5vw
+	&__link
+		font-weight: 600
+		font-size: 14px
+		display: flex
+		align-items: center
+		@media (max-width: 600px)
+			font-size: 0
+	&__icon
+		display: none
+		@media (max-width: 600px)
+			display: inline-block
+			width: 5vw
+			height: 5vw
+
+.footer
+	height: 50px
+	display: flex
+	justify-content: center
